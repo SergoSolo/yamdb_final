@@ -77,3 +77,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 Free
+https://github.com/SergoSolo/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
