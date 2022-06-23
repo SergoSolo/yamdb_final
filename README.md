@@ -39,7 +39,10 @@ Collect static:
 docker-compose exec web python manage.py collectstatic --no-input 
 ```
 
-The project is now available at http://localhost/.
+The project is now available at http://84.252.139.107:8000/.
+
+Status workflow:
+https://github.com/SergoSolo/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
 
 ## Resources
 
@@ -77,4 +80,3 @@ Please make sure to update tests as appropriate.
 
 ## License
 Free
-https://github.com/SergoSolo/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
