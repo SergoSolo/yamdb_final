@@ -1,10 +1,6 @@
 name: Django-app workflow
 
-on:
-  push:
-    branches:
-      - master
-      - main
+on: [push]
 
 jobs:
   tests: 
@@ -73,7 +69,7 @@ jobs:
             echo POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} >> .env
             echo DB_HOST=${{ secrets.DB_HOST }} >> .env
             echo DB_PORT=${{ secrets.DB_PORT }} >> .env
-            sudo docker compose up -d
+            sudo docker compose up -d 
             sudo docker compose exec -T web python manage.py makemigrations --noinput
             sudo docker compose exec -T web python manage.py migrate --noinput
             sudo docker compose exec -T web python manage.py collectstatic --no-input
